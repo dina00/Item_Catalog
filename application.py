@@ -73,7 +73,8 @@ def load_user(user_id):
     return None
 
 # The next part is concerned with signing in the user through Google
-# DISCLAIMER: Sorces of the code related to this funtionality are the Google dev website and Real python Google sign in tutorial.
+# DISCLAIMER: Sorces of the code related to this funtionality are 
+# the Google dev website and Real python Google sign in tutorial.
 # https://realpython.com/flask-google-login/
 # https://developers.google.com/identity/sign-in/web/sign-in
 # -------------------------------------------------------------------------------------------------------
