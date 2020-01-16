@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> <head/>
+<h1>Add a New Item</h1>
+
+<body>
+<form action="{{url_for('addnewItem',cat_id=cat_id)}}" method = 'POST'>
+
+
+	<p class="name">Name:</p>
+		<input type ='text' size='30' name='name'>
+	<p class="description">Description:</p>
+		<input type ='text' size='50' name='description'>
+</br><br/>
+
+<input type='submit' value='Create'>
+
+</form>
+
+</body>
+</html>

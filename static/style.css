@@ -1,0 +1,39 @@
+
+@charset "utf-8";
+body
+{
+    background-color: rgb(255, 229, 222); !important;
+    background-image: url("background.jpg");
+}
+
+h1, h2 { font-family: "Forum";
+    font-size: 50px; 
+    font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 40px; 
+}
+.button { font-family: "Forum";
+    font-size: 20px; 
+    font-style: lighter; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 40px; 
+}
+
+.name{
+	font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+ .description{
+ 	font-family: Georgia, serif;
+ 	font-style: italic;
+ 	font-size: 18px;
+ }
+
+ .notification{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+ }

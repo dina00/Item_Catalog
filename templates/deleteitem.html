@@ -1,0 +1,19 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> <head/>
+<body>
+<h2> Are you sure you want to delete {{item.name}}? </h2>
+
+<form action="{{ url_for('deleteItem',cat_id = item.cat_id, item_id=item.id)}}" method = 'post'>
+
+
+<input type='submit', value = 'Delete'>
+
+</form>
+
+<a href= '{{url_for('catalog')}}'>Cancel</a>
+</body>
+
+</html>

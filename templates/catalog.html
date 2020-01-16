@@ -1,0 +1,50 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> 
+	<head/>
+<body>
+<!--Google login button-->	
+<a class="button" href="/login" style="float:right">Google Login</a>
+<html>
+<head>
+  <meta name="google-signin-client_id" content="CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+  <div id="my-signin2"></div>
+  <script>
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+<h1>Catalog</h1>
+{% for i in categories %}
+
+<div>
+
+<a class="name" href='{{url_for('category', cat_id=i.id,) }} '> {{i.name}}</p></a>
+
+
+<p class="description">{{i.description}}</p>
+
+</br>
+
+</div>
+
+
+{% endfor %}
+</body>
+</html>

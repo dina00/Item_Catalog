@@ -1,0 +1,45 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> 
+  <head/>
+<body>
+            <p class="notification">Hello, {{current_user.name}}! You're logged in! Email: {{current_user.email}}</p>
+            <!--div><p>Google Profile Picture:{{current_user.profile_pic}}</p-->
+            <!--img src="https://www.googleapis.com/admin/directory/v1/users/userKey/photos/thumbnail" alt="Google profile pic"></img></div-->
+            <a class="button" href="/logout" style="float:right">Logout</a>
+
+<h1>Catalog</h1>
+
+<!--flash messages-->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+
+{% for i in categories %}
+
+<div>
+
+<a class="name" href='{{url_for('category', cat_id=i.id,) }} '> {{i.name}}</p></a>
+
+
+<p class="description">{{i.description}}</p>
+
+</br>
+
+</div>
+
+
+{% endfor %}
+</body>
+
+</html>
