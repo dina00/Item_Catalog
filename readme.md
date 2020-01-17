@@ -1,7 +1,7 @@
 # Item Catalog
 ## Intro
 
-This is website using **Python-Flask framework** in the back-end and **HTML** and **CSS** in the front-end. It displays the items in the database, allows editing and adding of items of signed in users.
+This is a simple website built using **Python-Flask framework** in the back-end and **HTML** and **CSS** in the front-end. It displays the items in the database, allows editing and adding of items of signed in users.
 
 
 ## What you need beforehand
@@ -13,7 +13,7 @@ This is website using **Python-Flask framework** in the back-end and **HTML** an
 - Install [oauthlib](https://pypi.org/project/oauthlib/).
 - Install [Flask-Login](https://pypi.org/project/Flask-Login/).
 - Install [pyOpenSSL](https://www.pyopenssl.org/en/stable/install.html).
-- Copy the files in this repo to the catalog folder in the vagrant folder.
+- Download the files in this repo to the catalog folder in the vagrant folder.
 - You need a Google Client ID and Secret Client ID for the Google sign to work, configure the project from [here](https://developers.google.com/identity/sign-in/web/sign-in). 
 
 
