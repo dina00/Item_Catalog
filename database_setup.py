@@ -11,7 +11,8 @@ Base = declarative_base()
 
 class Users(Base, UserMixin):
     __tablename__ = 'users'
-
+    # The id is of type string because,
+    # Google returns the user's id as string.
     id = Column(String, primary_key=True)
     name = Column(String(250), nullable=False)
     email = Column(String(250), nullable=False)
@@ -58,7 +59,7 @@ class Categories(Base):
 
 class Items(Base):
     __tablename__ = 'items'
-
+    # same thing here to use the user id it has to of type string.
     name = Column(String(80), nullable=False)
     id = Column(Integer, primary_key=True)
     description = Column(String(250))
