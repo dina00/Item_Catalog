@@ -73,7 +73,7 @@ def load_user(user_id):
     return None
 
 # The next part is concerned with signing in the user through Google
-# DISCLAIMER: Sorces of the code related to this funtionality are 
+# DISCLAIMER: Sorces of the code related to this funtionality are
 # the Google dev website and Real python Google sign in tutorial.
 # https://realpython.com/flask-google-login/
 # https://developers.google.com/identity/sign-in/web/sign-in
@@ -244,7 +244,6 @@ def editItem(cat_id, item_id):
     if not current_user.is_authenticated:
         return redirect('/login')
     editedItem = session.query(Items).filter_by(id=item_id).first()
-
 
     if current_user.get_id() != editedItem.user_id:
         flash('Not Authorized')
