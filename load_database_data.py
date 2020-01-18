@@ -2,7 +2,8 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from database_setup import Base, Categories, Items, Users
 
-engine = create_engine('sqlite:///catalog.db', connect_args={'check_same_thread': False})
+engine = create_engine('sqlite:///catalog.db',
+                       connect_args={'check_same_thread': False})
 
 Base.metadata.bind = engine
 
