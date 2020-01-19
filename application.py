@@ -193,7 +193,7 @@ def getUserID(email):
     try:
         user = session.query(Users).filter_by(email=email).one()
         return user.id
-    except:
+    except Exception:
         return None
 
 # -------------------------------------------------------------------------------------------------------
