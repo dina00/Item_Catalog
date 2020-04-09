@@ -1,7 +1,7 @@
 # Item Catalog
 ## Intro
 
-This is a simple website built using **Python-Flask framework** in the back-end and **HTML** and **CSS** in the front-end. It displays the items in the database, allows editing and adding of items of signed in users.
+This is a simple website built using **Python-Flask framework** in the back-end and **HTML** and **CSS** in the front-end. It displays the items in the database, allows editing and adding of items of signed in users. Users are signed in using OAuth and Google Sign-In.
 
 
 ## What you need beforehand
